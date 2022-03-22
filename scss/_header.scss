@@ -1,0 +1,94 @@
+header{
+    background: $primaryColor;
+    width: 100%;
+
+    .inner_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+
+        @media #{$mobile} {
+            position: relative;
+       }
+
+
+    }
+      #mainNav {
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: $text;
+   
+   
+   
+            a{
+                color: $text;
+                letter-spacing: 1px;
+            }
+   
+          
+        }
+   
+   
+        @media #{$mobile} {
+           display: block;
+           position: absolute;
+           background:#120078;
+           top: 50px;
+           left: 0;
+           width: 100%;
+           padding: 1rem;
+   
+           ul{
+               display: block;
+               text-align: center;
+               li{
+                //    background-color: coral;
+                   padding: 5px 0;
+                   margin: 5px 0;
+                   :focus{
+                       color: coral;
+                   }
+               }
+
+               a{
+                color: #fff;
+                display: block;
+                width: 100%;
+
+               
+            }
+
+           }
+         
+         
+   
+      }
+      
+
+
+      }
+      
+      
+    
+
+
+
+    .brand__img{
+        width: 100px;
+    }
+
+    
+
+}
+
+.toggle{
+
+    display: none;
+    @media #{$mobile} {
+        display: block;
+   }
+}

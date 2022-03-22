@@ -1,1 +1,119 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Pacifico&display=swap");
+/* 
+// Responsive Variables
+
+$laptop : "only screen and (min-width: 1200px) and (max-width:1600px)";
+$lg : "only screen and (min-width: 992px) and (max-width:1200px)";
+$md : "only screen and (min-width: 768px) and (max-width:991px)";
+$sm : "only screen and (min-width: 576px) and (max-width:767px)"; 
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Pacifico&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #fff4f2;
+  width: 100%;
+}
+
+header .inner_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+}
+
+@media (max-width: 767px) {
+  header .inner_header {
+    position: relative;
+  }
+}
+
+header #mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  color: #3A3845;
+}
+
+header #mainNav ul a {
+  color: #3A3845;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  header #mainNav {
+    display: block;
+    position: absolute;
+    background: #120078;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  header #mainNav ul {
+    display: block;
+    text-align: center;
+  }
+  header #mainNav ul li {
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  header #mainNav ul li :focus {
+    color: coral;
+  }
+  header #mainNav ul a {
+    color: #fff;
+    display: block;
+    width: 100%;
+  }
+}
+
+header .brand__img {
+  width: 100px;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .toggle {
+    display: block;
+  }
+}
